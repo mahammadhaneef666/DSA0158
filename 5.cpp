@@ -1,7 +1,8 @@
 #include<iostream>
 using namespace std;
 int main(){
-	float choice,num1,num2;
+	float num1,num2;
+	int choice;
 	cout<<"calculator:"<<endl;
 	cout<<"1.Addition:"<<endl;
 	cout<<"2.subtraction:"<<endl;
@@ -28,7 +29,7 @@ switch(choice){
 	cout<<"the value of division:"<<(num1 / num2)<<endl;
 	break;
 	case 5:
-	cout<<"the value of modulus:"<<(num1 % num2)<<endl;
+	cout<<"the value of modulus:"<<(int(num1)% int(num2))<<endl;
 	}
 	return 0;
 	}
